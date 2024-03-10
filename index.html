@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>To do list</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <script src="app.js" defer></script>
+  </head>
+  
+  <body>
+    <div class="conteiner">
+      <header>
+        <h1>Список задач</h1>
+      </header>
+
+      <div class="conteiner_date">
+        <p id="data">Дата: 07.02.2024</p>
+        <p id="time">Время: 12:37</p>
+
+        <div class="conteiner_number-of-task">
+          <p id="quantity">Количество задач: 0</p>
+        </div>
+      </div>
+      
+
+      <div>
+        <img src="imgs\logo.png" alt="логотип">
+      </div>
+
+      <section class="main">
+        <div class="conteiner_btn-main">
+          
+          <button
+            class="conteiner_btn-pickAll"
+            id="btnAllTasksCompleted"
+            type="button"
+          >
+            Выделить все
+          </button>
+          
+          <button
+            class="conteiner_btn-deleteDone"
+            id="deleteAllComplite"
+            type="button"
+          >
+            Удалить выполненные
+          </button>
+          
+          <button class="conteiner_btn-deleteAll" id="deleteAll" type="button">
+            Удалить все
+          </button>
+        
+        </div>
+      </section>
+
+      <div class="conteiner_tabs">    
+        <select id="tabs">
+          <option value="all" selected>Все</option>
+          <option value="completed">Выполненные</option>
+          <option value="uncompleted">Невыполненные</option>
+        </select> 
+      </div>
+
+      <div class="conteiner_input">
+        <input type="text" placeholder="Задача..." id="input" autofocus />
+        <button type="button" id="btnAdd"></button>
+      </div>
+
+   
+   
+      <div class="conteiner_list">
+        <ul id="list">
+        </ul>
+
+        <div class="paginationNavigation">
+          <button type="button" id="btnPaginationBack" data-action="back"></button>
+          
+          <span>1</span>
+          
+          <button type="button" id="btnPaginationAhead" data-action="ahead"></button>
+       
+        </div>
+      </div>
+      
+      <div class="conteiner_footer">
+        <p>Created by Luk.Alex (HTML & JS), Luk.Nata (CSS)</p>
+      </div>
+    
+    </div>
+
+  </body>
+</html>
