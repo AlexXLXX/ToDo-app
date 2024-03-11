@@ -56,7 +56,7 @@ table {
 body {
   background-color: rgba(0 0 0/1);
   background-image: url(imgs/background.jpg);
-  background-size: 100%  400px;
+  background-size: 100% 42%;
   background-repeat: no-repeat;
   position: relative;
 }
@@ -421,10 +421,19 @@ option {
   font-style: italic;
 }
 
+
+
+
+
+
+
+
+
+
 @media (max-width: 450px) {
 
   body {
-    background-size: 100%  270px;
+    background-size: cover;
     position: relative;
   }
 
