@@ -9,7 +9,7 @@
 
     <script src="app.js" defer></script>
   </head>
-  
+
   <body>
     <div class="conteiner">
       <header>
@@ -24,15 +24,13 @@
           <p id="quantity">Количество задач: 0</p>
         </div>
       </div>
-      
 
       <div>
-        <img src="imgs\logo.png" alt="логотип">
+        <img src="imgs\logo.png" alt="логотип" />
       </div>
 
       <section class="main">
         <div class="conteiner_btn-main">
-          
           <button
             class="conteiner_btn-pickAll"
             id="btnAllTasksCompleted"
@@ -40,7 +38,7 @@
           >
             Выделить все
           </button>
-          
+
           <button
             class="conteiner_btn-deleteDone"
             id="deleteAllComplite"
@@ -48,20 +46,19 @@
           >
             Удалить выполненные
           </button>
-          
+
           <button class="conteiner_btn-deleteAll" id="deleteAll" type="button">
             Удалить все
           </button>
-        
         </div>
       </section>
 
-      <div class="conteiner_tabs">    
+      <div class="conteiner_tabs">
         <select id="tabs">
           <option value="all" selected>Все</option>
           <option value="completed">Выполненные</option>
           <option value="uncompleted">Невыполненные</option>
-        </select> 
+        </select>
       </div>
 
       <div class="conteiner_input">
@@ -69,27 +66,29 @@
         <button type="button" id="btnAdd"></button>
       </div>
 
-   
-   
       <div class="conteiner_list">
-        <ul id="list">
-        </ul>
+        <ul id="list"></ul>
 
         <div class="paginationNavigation">
-          <button type="button" id="btnPaginationBack" data-action="back"></button>
-          
+          <button
+            type="button"
+            id="btnPaginationBack"
+            data-action="back"
+          ></button>
+
           <span>1</span>
-          
-          <button type="button" id="btnPaginationAhead" data-action="ahead"></button>
-       
+
+          <button
+            type="button"
+            id="btnPaginationAhead"
+            data-action="ahead"
+          ></button>
         </div>
       </div>
-      
+
       <div class="conteiner_footer">
         <p>Created by Luk.Alex (HTML & JS), Luk.Nata (CSS)</p>
       </div>
-    
     </div>
-
   </body>
 </html>
