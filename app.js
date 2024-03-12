@@ -518,6 +518,23 @@ function editTaskText(event) {
   }
 }
 
+taskList.addEventListener("touchstart", doubleTouch);
+
+let expired;
+let doubleTouch = function (e) {
+  if (e.touches.length === 1) {
+    if (!expired) {
+      expired = e.timeStamp + 400;
+    } else if (e.timeStamp <= expired) {
+      e.preventDefault();
+      editTaskText();
+      expired = null;
+    } else {
+      expired = e.timeStamp + 400;
+    }
+  }
+};
+
 function escapeHtml(str) {
   return str
     .replace(/&/g, "&amp;")
