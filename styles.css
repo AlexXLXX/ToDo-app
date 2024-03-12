@@ -432,9 +432,12 @@ option {
 
 @media (max-width: 450px) {
 
-  body {
+ html {
+    background-image: url(imgs/background.jpg);
     background-size: cover;
-    position: relative;
+  }
+  body {
+    background-color: transparent;
   }
 
   .conteiner {
@@ -446,7 +449,6 @@ option {
     margin: auto;
     border: none;
   }
-
   
   header h1 {
     font-size: 35px;
